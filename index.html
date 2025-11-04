@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ครบรอบ 2 ปี 1 เดือน ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="พอร์มเซอร์ไพรส์วันครบรอบ 2 ปี 1 เดือน">
+</head>
+<body>
+  <main class="container">
+    <section id="quiz-card" class="card">
+      <h1>คำถามพิเศษก่อนเข้าชมวิดีโอ 💌</h1>
+      <p class="lead">วันนี้ครบรอบกี่ปีกี่เดือน?</p>
+
+      <form id="quiz-form" aria-labelledby="quiz-question">
+        <fieldset>
+          <legend id="quiz-question" class="sr-only">วันนี้ครบรอบกี่ปีกี่เดือน</legend>
+
+          <!-- เปลี่ยน/เพิ่มตัวเลือกได้ตามต้องการ -->
+          <label class="option">
+            <input type="radio" name="answer" value="2ปี1เดือน" data-correct="true">
+            <span>2 ปี 1 เดือน</span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="answer" value="2ปี" />
+            <span>2 ปี</span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="answer" value="2ปี2เดือน" />
+            <span>2 ปี 2 เดือน</span>
+          </label>
+
+          <label class="option">
+            <input type="radio" name="answer" value="1ปี11เดือน" />
+            <span>1 ปี 11 เดือน</span>
+          </label>
+        </fieldset>
+
+        <button id="submit-btn" type="submit" class="btn">ยืนยันคำตอบ</button>
+        <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="video-section" class="hidden">
+      <div class="video-wrapper card">
+        <h2>รักนะ ❤️ ชมวิดีโอเซอร์ไพรส์</h2>
+        <!-- IFRAME จาก Google Drive: ใช้ /preview เพื่อฝัง -->
+        <div class="ratio">
+          <iframe
+            id="drive-player"
+            src="https://drive.google.com/file/d/1ZwqCAj9G07wHLQJUTFrqyM5p7h0vCDlK/preview"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="Anniversary Video"
+          ></iframe>
+        </div>
+        <p class="note">ถ้าวิดีโอไม่เล่นอัตโนมัติ ให้แตะปุ่ม ▶️ ในกรอบวิดีโอ หรือ <a href="https://drive.google.com/file/d/1ZwqCAj9G07wHLQJUTFrqyM5p7h0vCDlK/view" target="_blank" rel="noopener">เปิดดูในแท็บใหม่</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- คอนเฟตตี้ง่าย ๆ -->
+  <canvas id="confetti" class="confetti hidden"></canvas>
+
+  <footer class="footer">
+    ทำด้วยรักโดย Benz 💖
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
